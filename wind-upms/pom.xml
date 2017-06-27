@@ -28,5 +28,6 @@
     <module>wind-upms-rpc-api</module>
     <module>wind-upms-rpc-service</module>
     <module>wind-upms-web</module>
+    <module>wind-upms-common</module>
   </modules>
 </project>

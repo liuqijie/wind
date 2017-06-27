@@ -31,6 +31,12 @@ public class VelocityUtil {
 			//VelocityEngine engine = new VelocityEngine();
 			Template template = Velocity.getTemplate(getFile(inputVmFilePath), "utf-8");
 			File outputFile = new File(outputFilePath);
+			
+			File dir = outputFile.getParentFile();
+			if(!dir.exists()){
+				dir.mkdirs();
+			}
+			
 			FileWriterWithEncoding writer = new FileWriterWithEncoding(outputFile, "utf-8");
 			template.merge(context, writer);
 			writer.close();
