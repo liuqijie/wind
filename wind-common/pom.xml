@@ -8,9 +8,11 @@
 		<artifactId>wind</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
 	<groupId>com.wind</groupId>
 	<artifactId>wind-common</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	
 	<name>wind-common</name>
 	<url>http://blog.csdn.net/jay_1989</url>
