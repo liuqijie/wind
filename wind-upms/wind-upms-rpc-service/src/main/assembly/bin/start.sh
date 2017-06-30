@@ -52,7 +52,7 @@ if [ "$1" = "debug" ]; then
 fi
 JAVA_JMX_OPTS=""
 if [ "$1" = "jmx" ]; then
-    JAVA_JMX_OPTS=" -Djava.rmi.server.hostname=172.21.32.38 -Dcom.sun.management.jmxremote.port=1088 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false "
+    JAVA_JMX_OPTS=" -Djava.rmi.server.hostname=139.196.141.164 -Dcom.sun.management.jmxremote.port=1088 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false "
 fi
 JAVA_MEM_OPTS=""
 BITS=`java -version 2>&1 | grep -i 64-bit`
@@ -71,7 +71,7 @@ while [ $COUNT -lt 1 ]; do
     sleep 1 
     if [ -n "$SERVER_PORT" ]; then
         if [ "$SERVER_PROTOCOL" == "dubbo" ]; then
-    	    COUNT=`echo status | nc -i 1 172.21.32.38 $SERVER_PORT | grep -c OK`
+    	    COUNT=`echo status | nc -i 1 139.196.141.164 $SERVER_PORT | grep -c OK`
         else
             COUNT=`netstat -an | grep $SERVER_PORT | wc -l`
         fi
