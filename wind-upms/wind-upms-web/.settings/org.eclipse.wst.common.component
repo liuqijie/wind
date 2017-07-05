@@ -4,6 +4,10 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <dependent-module archiveName="wind-upms-client-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wind-upms-client/wind-upms-client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="wind-upms-web"/>
         <property name="java-output-path" value="/wind-upms-web/target/classes"/>
     </wb-module>
