@@ -9,5 +9,5 @@ import com.wind.upms.dao.model.UpmsUserExample;
 * Created by liuqijie on 2017/6/27.
 */
 public interface UpmsUserService extends BaseService<UpmsUser, UpmsUserExample> {
-
+	UpmsUser createUser(UpmsUser upmsUser);
 }
