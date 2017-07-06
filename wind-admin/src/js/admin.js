@@ -44,7 +44,7 @@ $(function() {
 	});
 	// 显示cookie菜单
 	var systemid = $.cookie('wind-upms-systemid') || 1;
-	var systemname = $.cookie('wind-upms-systemname') || 'wind-upms-server';
+	var systemname = $.cookie('wind-upms-systemname') || 'wind-upms-web';
 	var systemtitle = $.cookie('wind-upms-systemtitle') || '权限管理系统';
 	$('.system_menus').hide(0, function () {
 		$('.system_' + systemid).show();

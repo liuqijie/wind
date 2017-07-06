@@ -20,6 +20,7 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.wind.upms.rpc.api.UpmsApiService;
 import com.wind.common.util.MD5Util;
@@ -35,6 +36,7 @@ import com.wind.upms.dao.model.UpmsRole;
 public class UpmsRealm extends AuthorizingRealm {
 	private static Logger _log = LoggerFactory.getLogger(UpmsRealm.class);
 	
+	@Autowired
 	private UpmsApiService upmsApiService;
 	
 	/**

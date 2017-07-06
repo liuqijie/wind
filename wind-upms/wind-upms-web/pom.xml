@@ -25,6 +25,11 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
+            <groupId>com.wind</groupId>
+            <artifactId>wind-admin</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
@@ -68,7 +73,7 @@
 	</profiles>
 
 	<build>
-		<finalName>wind-upms-server</finalName>
+		<finalName>wind-upms-web</finalName>
 		<filters>
 			<filter>src/main/resources/profiles/${env}.properties</filter>
 		</filters>
