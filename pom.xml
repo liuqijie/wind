@@ -21,5 +21,6 @@
   <modules>
     <module>wind-common</module>
     <module>wind-upms</module>
+    <module>wind-admin</module>
   </modules>
 </project>
